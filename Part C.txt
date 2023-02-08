@@ -36,3 +36,6 @@ int main()
     // Calculate the least common multiple of the two numbers
     cout << myLCM(num1, num2) << endl;
 }
+// for recursion do the below
+// it tests
+// condition ? true : false

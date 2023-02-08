@@ -2,27 +2,51 @@
 
 using namespace std;
 
-// Function to calculate the greatest common divisor of two numbers
-int myGCD(int a, int b)
-{
-	// If b is 0, return a : (the gcd of a and 0 is a)
-	int w = (b == 0 ? a : myGCD(b, a % b));
 
-	return w;
+int power(int a, int b)
+{
+	/*int c = b;
+
+	cout << "Power(" << a << ", " << b << ") is equal to: " << endl;
+
+	while (c >= 2)
+	{
+		cout << a << " * ";
+
+		if (c == 2)
+		{
+			cout << a;
+		}
+		c--;
+	}
+	cout << endl;
+
+	int d = pow(a, b);
+
+	cout << "Answer = " << d << endl;
+
+
+	return (a);*/
+
+	int myAns;
+
+	if (a == 1) {return b;}
+	else {myAns = b * power(a, b - 1);}
+	return myAns;
 }
 
-int main() {
-	// Read in two numbers
-	int num1, num2;
 
-	cout << "Enter a value for num1: ";
-	cin >> num1;
-	cout << endl;
+int main()
+{
+	int base, exponent;
 
-	cout << "Enter a value for num2: ";
-	cin >> num2;
-	cout << endl;
+	cout << "Please enter an int value for the base part: " << endl;
+	cin >> base;
 
-    // Calculate and output the greatest common divisor of the two numbers
-    cout << myGCD(num1, num2) << endl;
+	cout << "Please enter an int value for the exponent part" << endl;
+	cin >> exponent;
+
+
+	power(base, exponent);
+
 }
