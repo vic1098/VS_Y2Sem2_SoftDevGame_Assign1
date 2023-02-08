@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+
+int myPower(int a, int b)
+{
+	int c = b;
+
+	cout << "Power(" << a << ", " << b << ") is equal to: " << endl;
+
+	while (c >= 2)
+	{
+		cout << a << " * ";
+
+		if (c == 2)
+		{
+			cout << a;
+		}
+		c--;
+	}
+
+
+	return (a);
+}
+
+
+int main()
+{
+	int base, exponent;
+
+	cout << "Please enter an int value for the base part: " << endl;
+	cin >> base;
+
+	cout << "Please enter an int value for the exponent part" << endl;
+	cin >> exponent;
+
+
+	myPower(base, exponent);
+
+}
