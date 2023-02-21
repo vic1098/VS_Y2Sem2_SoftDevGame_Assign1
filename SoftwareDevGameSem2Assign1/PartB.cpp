@@ -23,8 +23,8 @@ int main() {
 	cin >> num2;
 	cout << endl;
 
-    // Calculate and output the greatest common divisor of the two numbers
-    cout << myGCD(num1, num2) << endl;
+	// Calculate and output the greatest common divisor of the two numbers
+	cout << myGCD(num1, num2) << endl;
 }
 // for recursion do the below
 // it tests

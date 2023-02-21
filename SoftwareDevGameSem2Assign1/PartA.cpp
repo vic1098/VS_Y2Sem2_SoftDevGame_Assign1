@@ -9,9 +9,9 @@ int power(int base, int exponent)
 	//	return 1;
 	//}	
 
-	if (exponent == 1) 
+	if (exponent == 1)
 	{
-		return base; 
+		return base;
 	}
 
 	int myAns = base * power(base, exponent - 1);
